@@ -10,8 +10,8 @@ pipeline {
             steps {
                 // sh 'make check'
                 // junit 'reports/**/*.xml'
-                sh 'npm i'
-                sh 'npx cypress run'
+                bat "npm i"
+                bat "npx cypress run"
             }
         }
         stage('Deploy') {
